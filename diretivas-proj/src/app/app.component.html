@@ -1,0 +1,8 @@
+<app-comp-atributos> </app-comp-atributos>
+
+<app-card *ngIf="isAliveCard; else Block" ></app-card>
+
+<ng-template #Block>
+    <a>Texto do else ...</a>
+</ng-template>
+<router-outlet></router-outlet>
